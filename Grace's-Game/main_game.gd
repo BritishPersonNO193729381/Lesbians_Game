@@ -10,14 +10,16 @@ func _ready() -> void:
 	get_tree().paused = false
 
 	# LOCK PLAYER INPUT ON START (NEW)
-		Global.disablePlayerInput()
+	Global.disablePlayerInput()
 	spawn_player()
 
 
 func spawn_player() -> void:
 	# Use saved spawn if it exists
-		if Global.respawnCheckpoint != Vector2.ZERO:
-			player.global_position = Global.respawnCheckpoint
+	if Global.respawnCheckpoint != Vector2.ZERO:
+		player.global_position = Global.respawnCheckpoint
+	else:
+		player.global_position = player_spawn1.global_position
 
 	# Reset movement
 	player.velocity = Vector2.ZERO

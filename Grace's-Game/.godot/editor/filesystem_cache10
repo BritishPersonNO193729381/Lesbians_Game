@@ -1,0 +1,59 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1782766218
+Checkpoint Icecream.png::CompressedTexture2D::385468571226455135::1782738782::1782766219::1::::<><><>0<>0<>f68725a817c3e1db80744ce450568688<>res://.godot/imported/Checkpoint Icecream.png-5dd95f5a924ea38a563d009cc65dab14.ctex::
+checkpoint.gd::GDScript::5048486635056783104::1782765669::0::1::::<>Area2D<><>0<>0<><>::
+checkpoint.tscn::PackedScene::8343852276369702218::1782738782::0::1::::<><><>0<>0<><>::uid://cd6r3p5x1dbsa::::res://checkpoint.gd<>uid://fqyu1myxw6rb::::res://Checkpoint Icecream.png
+Controls_Label_Settings.tres::LabelSettings::7809964868514253518::1782738782::0::1::::<><><>0<>0<><>::uid://b25tq8b041oto::::res://Fonts/LoveDays-2v7Oe.ttf
+death_screen.gd::GDScript::2231096735874832612::1782765669::0::1::::<>CanvasLayer<><>0<>0<><>::
+death_screen.tscn::PackedScene::2597293082274744772::1782738782::0::1::::<><><>0<>0<><>::uid://6103p5fpekh5::::res://death_screen.gd
+evil_sorbet.gd::GDScript::7481998109902021735::1782738782::0::1::::<>Area2D<><>0<>0<><>::
+evil_sorbet.tscn::PackedScene::7936854252325801559::1782738782::0::1::::<><><>0<>0<><>::uid://deuloeudvlc36::::res://evil_sorbet.gd<>uid://cj21v25b4sayl::::res://Sprites/Evil_Sorbet.png
+fuckass_key.gd::GDScript::4180678271831302985::1782765669::0::1::::<>Area2D<><>0<>0<><>::
+fuckass_key.tscn::PackedScene::4082603227538501920::1782738782::0::1::::<><><>0<>0<><>::uid://b0tffplx4a1ov::::res://fuckass_key.gd<>uid://beq5rthclkjji::::res://Sprites/Shitty Key.png
+Global.gd::GDScript::8419520331125098922::1782765669::0::1::::<>Node<><>0<>0<><>::
+global_vars.tscn::PackedScene::3745156390847851607::1782738782::0::1::::<><><>0<>0<><>::uid://bu7k1srh44g8g::::res://node_2d.gd
+health_pickup.gd::GDScript::8730882278652846509::1782765669::0::1::::<>Area2D<><>0<>0<><>::
+health_pickup.tscn::PackedScene::780206547252395942::1782738782::0::1::::<><><>0<>0<><>::uid://dwnkmc82uundt::::res://health_pickup.gd<>uid://ycpb43w37r08::::res://Sprites/Heath_Pickup.png
+hud.tscn::PackedScene::5120310228101206577::1782738782::0::1::::<><><>0<>0<><>::uid://cyewdaln72h8n::::res://ice_cream_health_hud.gd<>uid://b5sjadwjni5mn::::res://Sprites/Max Health.png<>uid://fpijuykksy6q::::res://Sprites/3 Health.png<>uid://dj8hjwbs10br3::::res://Sprites/2 Health.png<>uid://71bollpxe2we::::res://Sprites/1 Health.png<>uid://dspsqrodgno6::::res://Sprites/Dead.png
+ice_cream_health_hud.gd::GDScript::6466972274565137603::1782765669::0::1::::<>Node2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::2730705889720250815::1782738782::1782766219::1::::<><><>0<>0<>0fb43375b1495a09e1f0663554202ec3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+level_1.tscn::PackedScene::3091918219126560348::1782738782::0::1::::<><><>0<>0<><>::uid://dpaqt57601di8::::res://Sprites/Level_Tileset.png<>uid://ld65gl2onx4i::::res://health_pickup.tscn<>uid://kxag4l3fvkfu::::res://spike.tscn<>uid://dlcw3hoh5y0hf::::res://evil_sorbet.tscn<>uid://dl17dmon4rkf7::::res://locked_block.tscn<>uid://byfv440ycpix1::::res://fuckass_key.tscn<>uid://djjg8ljb81lc5::::res://Controls_Label_Settings.tres<>uid://s0ltvpcpk47x::::res://win.tscn
+locked_block.gd::GDScript::2724434821937729495::1782765669::0::1::::<>StaticBody2D<><>0<>0<><>::
+locked_block.tscn::PackedScene::7986962106391012842::1782738782::0::1::::<><><>0<>0<><>::uid://be20bqiv0f2xf::::res://locked_block.gd<>uid://h6vls23w378t::::res://Sprites/Bottom Dirt Locked.png
+main_game.gd::GDScript::3760563717453962135::1782765669::0::1::::<>Node2D<><>0<>0<><>::
+main_game.tscn::PackedScene::1359622414532114979::1782738782::0::1::::<><><>0<>0<><>::uid://bttv614j2nrgp::::res://main_game.gd<>uid://b1kd0juyfdksg::::res://main_menu_v_2.tscn<>uid://ck5spugybuie3::::res://player.tscn<>uid://bkb0paggwm1oy::::res://level_1.tscn<>uid://ce7k05e5le36t::::res://hud.tscn<>uid://bdafbjpwu7yiu::::res://death_screen.tscn
+main_menu.gd::GDScript::4612767449204236629::1782765669::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::4280477954539748311::1782738782::0::1::::<><><>0<>0<><>::uid://b6ypuuqo81kef::::res://main_menu.gd<>uid://22thocwfuh62::::res://Sprites/Menu_Background_V2.jpg<>uid://b60wcm3305a17::::res://Fonts/HappyFestive-MAYVn.ttf<>uid://b25tq8b041oto::::res://Fonts/LoveDays-2v7Oe.ttf<>uid://djjg8ljb81lc5::::res://Controls_Label_Settings.tres
+main_menu_v_2.gd::GDScript::8202997253300703371::1782765669::0::1::::<>CanvasLayer<><>0<>0<><>::
+main_menu_v_2.tscn::PackedScene::4232201696351964154::1782738782::0::1::::<><><>0<>0<><>::uid://do4ufwh26vo56::::res://main_menu_v_2.gd<>uid://22thocwfuh62::::res://Sprites/Menu_Background_V2.jpg<>uid://b60wcm3305a17::::res://Fonts/HappyFestive-MAYVn.ttf<>uid://b25tq8b041oto::::res://Fonts/LoveDays-2v7Oe.ttf<>uid://djjg8ljb81lc5::::res://Controls_Label_Settings.tres
+player.gd::GDScript::1618252210937044637::1782765669::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::5537781889995100404::1782738782::0::1::::<><><>0<>0<><>::uid://dp76of81to1pa::::res://Sprites/Player_Sprite.png<>uid://xb5m3mwfrbab::::res://player.gd
+spike.gd::GDScript::1561446914605511702::1782738782::0::1::::<>Area2D<><>0<>0<><>::
+spike.tscn::PackedScene::749381380936841502::1782738782::0::1::::<><><>0<>0<><>::uid://wim2j0s4vldm::::res://spike.gd<>uid://4u2or6smd64x::::res://Sprites/Spike.png
+win.gd::GDScript::5038438881641811178::1782738782::0::1::::<>Area2D<><>0<>0<><>::
+win.tscn::PackedScene::1315711572614464267::1782738782::0::1::::<><><>0<>0<><>::uid://cd1wl8hbyln83::::res://win.gd<>uid://bh8qumnmxxvar::::res://Sprites/Win Icecream.png<>uid://bysuxl4smo0qy::::res://win_screen.tscn
+win_screen.gd::GDScript::6399390182332950243::1782765669::0::1::::<>CanvasLayer<><>0<>0<><>::
+win_screen.tscn::PackedScene::4109367767084729164::1782738782::0::1::::<><><>0<>0<><>::uid://cxf6ayw075n2j::::res://win_screen.gd<>uid://djjg8ljb81lc5::::res://Controls_Label_Settings.tres
+::res://Fonts/::1782738782
+HappyFestive-MAYVn.ttf::FontFile::4615224300593777044::1782738782::1782766219::1::::<><><>0<>0<>b311ca6a83cbfd01da2bebfd79d12a7d<>res://.godot/imported/HappyFestive-MAYVn.ttf-9704613b634b0341375e80ea098915e0.fontdata::
+LoveDays-2v7Oe.ttf::FontFile::4344634726097847116::1782738782::1782766219::1::::<><><>0<>0<>133bf1ee7cde3979f5fa0a965f582362<>res://.godot/imported/LoveDays-2v7Oe.ttf-789ede9217544686e23caae9a38d3830.fontdata::
+ShadeBlue-2OozX.ttf::FontFile::9027567708830628018::1782738782::1782766219::1::::<><><>0<>0<>1e0cc4fb9d8c43a5995022e512d6ec74<>res://.godot/imported/ShadeBlue-2OozX.ttf-f48aa7555dd2b9a6070bcb993f58a176.fontdata::
+::res://Sprites/::1782738782
+1 Health.png::CompressedTexture2D::2299803131592181900::1782738782::1782766219::1::::<><><>0<>0<>e8a104a9cfd62b1b5e17eec42a2239e2<>res://.godot/imported/1 Health.png-3e3a83a7008eb7003fa11b6bc687caab.ctex::
+2 Health.png::CompressedTexture2D::7859528358712150858::1782738782::1782766219::1::::<><><>0<>0<>6364970712729eb0eb2cb4b3cdc45718<>res://.godot/imported/2 Health.png-341c49f7695bf78aa5277cd0497dcd30.ctex::
+3 Health.png::CompressedTexture2D::382412780599097086::1782738782::1782766219::1::::<><><>0<>0<>27789c65a90840156a7e1cc2b4f825cd<>res://.godot/imported/3 Health.png-931f7f300a0d3a235a8a1e79011c7ed2.ctex::
+Bottom Dirt Locked.png::CompressedTexture2D::556613304855881077::1782738782::1782766219::1::::<><><>0<>0<>5c4bc3ce86a5acc2eeba6f32829f8533<>res://.godot/imported/Bottom Dirt Locked.png-703db03926a1af89a433fb56c137bea0.ctex::
+Dead.png::CompressedTexture2D::248669096944591887::1782738782::1782766219::1::::<><><>0<>0<>4ac76e86f17dac738126505677097bd4<>res://.godot/imported/Dead.png-aa907e5019dbd229b9036132274a699a.ctex::
+Evil_Sorbet.png::CompressedTexture2D::5461896767531522235::1782738782::1782766219::1::::<><><>0<>0<>244c996cc0de473fbdd289f7980ec69a<>res://.godot/imported/Evil_Sorbet.png-4ee9754bc1b87375e4cb5470f0284a67.ctex::
+Heath_Pickup.png::CompressedTexture2D::1689575110976251447::1782738782::1782766219::1::::<><><>0<>0<>a1e7fb2af9af7b5e0d8cdf9dee5dcc38<>res://.godot/imported/Heath_Pickup.png-4997a49a81da7aa193130ae60fcba396.ctex::
+Level_Tileset.png::CompressedTexture2D::8213101734195423229::1782738782::1782766219::1::::<><><>0<>0<>6cb0c275df0cba6b5736a8adbdd052c1<>res://.godot/imported/Level_Tileset.png-85dcc0bb77970b1cd6297fdac35a939a.ctex::
+Max Health.png::CompressedTexture2D::4529791437324435021::1782738782::1782766219::1::::<><><>0<>0<>b256be45bb0f42af1af11a08f912d13a<>res://.godot/imported/Max Health.png-ae0951d7f3f365a8850bf333ffa484dd.ctex::
+Menu_Background.jpg::CompressedTexture2D::3058255121136536712::1782738782::1782766220::1::::<><><>0<>0<>32d4d98cff9189256e2c8dd179ef91a4<>res://.godot/imported/Menu_Background.jpg-4b183255ecda86b80e7e217a45a328f5.ctex::
+Menu_Background_V2.jpg::CompressedTexture2D::1952003840429952517::1782738782::1782766219::1::::<><><>0<>0<>4ed1d99fd5e008d82d45ffd0a0a94285<>res://.godot/imported/Menu_Background_V2.jpg-5613ea870b8bdb330039967a954d010c.ctex::
+Player_Sprite.png::CompressedTexture2D::8280062336472719366::1782738782::1782766219::1::::<><><>0<>0<>ab908f6a96421110fbd1834bea96fe9b<>res://.godot/imported/Player_Sprite.png-373c09583d6fc3bb6e5b710321b68785.ctex::
+Shitty Key.png::CompressedTexture2D::2702058979452822110::1782738782::1782766219::1::::<><><>0<>0<>0dc2de15cd34dcb9be245fa7acbefade<>res://.godot/imported/Shitty Key.png-6ec22242c0fc372113ba9714be616d23.ctex::
+Spike.png::CompressedTexture2D::2078429322123415493::1782738782::1782766219::1::::<><><>0<>0<>4fa9cdd00df605e042306f5e398c27bb<>res://.godot/imported/Spike.png-b61e573f8651e478982148589351f8d1.ctex::
+Top Grass.png::CompressedTexture2D::5533666396780801272::1782738782::1782766219::1::::<><><>0<>0<>e5adf405d70ba84f31b3cc2e767233f4<>res://.godot/imported/Top Grass.png-9a2bc2ca53e0cc14136c31c2d1905017.ctex::
+Win Icecream.png::CompressedTexture2D::2946874893745209933::1782738782::1782766219::1::::<><><>0<>0<>bc4ffec912d36e2953e83687df6fcfa5<>res://.godot/imported/Win Icecream.png-c7137481b18b49b40258c331b087290b.ctex::
+::res://Text_Files/::1782739649
+Shite.txt::TextFile::-1::1782739653::0::1::::<><><>0<>0<><>::

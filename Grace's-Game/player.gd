@@ -122,7 +122,7 @@ func take_damage(from_position: Vector2) -> void:
 # ==========================================
 
 func respawn() -> void:
-		print("Respawning at:", Global.respawnCheckpoint)
+	print("Respawning at:", Global.respawnCheckpoint)
 	print("Player:", global_position)
 	print("Camera:", get_viewport().get_camera_2d().global_position)
 

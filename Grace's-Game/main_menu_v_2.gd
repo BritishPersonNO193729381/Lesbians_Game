@@ -37,7 +37,7 @@ func _ready() -> void:
 # =========================================
 
 func open_menu() -> void:
-		Global.disablePlayerInput()
+	Global.disablePlayerInput()
 	var player := get_tree().get_first_node_in_group("Player")
 	if player:
 		Global.menu_world_position = player.global_position + Vector2(0, -60)
