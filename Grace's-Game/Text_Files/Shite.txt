@@ -1,0 +1,71 @@
+Analyze all game components and systems
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/checkpoint.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/player.gd#1-1), lines 1 to 100
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/evil_sorbet.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/spike.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/health_pickup.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/fuckass_key.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/locked_block.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/main_game.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/main_menu.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/main_menu_v_2.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/win_screen.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/death_screen.gd#1-1), lines 1 to 50
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/ice_cream_health_hud.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/win.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/Global.gd)
+
+Read [](file:///c%3A/Users/yourb/Desktop/Gotot%20Games/Graces%20Game%20Design/Lesbians_Game/julia%27s-game/Sprites)
+
+Perfect! I've analyzed your Godot game project. Here's a comprehensive list of all components organized by category:
+
+## **PLAYER & CHARACTER**
+- **Player** – Your main character with movement controls, jumping (400 units/sec), damage system, knockback, and invincibility frames
+
+## **ENEMIES**
+- **Evil Sorbet** – Patrolling enemy that moves between waypoints and deals 1 damage on contact (with cooldown)
+
+## **HAZARDS & OBSTACLES**
+- **Spikes** – Stationary hazard that damages the player on contact
+- **Locked Block** – Obstacle that requires collecting keys to unlock; removes collision/sprite once unlocked
+
+## **COLLECTIBLES**
+- **Health Pickup** – Restores 1 health when collected (won't pick up at max health)
+- **Key (Fuckass Key)** – Collectible key used to unlock locked blocks
+
+## **CHECKPOINT & PROGRESSION**
+- **Checkpoint** – Save point that stores player spawn position when touched
+- **Win Trigger** – Goal area that shows the win screen when reached
+
+## **UI & HUD**
+- **Ice Cream Health HUD** – Displays current health (0-4) using ice cream sprite states
+- **Controls Label Settings** – Label styling resource for UI
+
+## **MENUS & SCREENS**
+- **Main Menu V1 & V2** – Two versions of the main menu with Play, Controls, and Credits screens
+- **Death Screen** – Game over screen with Retry button
+- **Win Screen** – Victory screen with Play Again button
+
+## **GLOBAL SYSTEMS**
+- **Global Manager** – Central state controller tracking player health, keys, score, current level, and checkpoint positions
+- **Main Game Manager** – Game loop that spawns the player and manages input/menu visibility
+
+## **SPRITES**
+Health display (Max/3/2/1 Health), Player sprite, Enemy sprite, Collectibles (Health Pickup, Key), Hazards (Spike), Environment (Tileset, Grass, Locked Block tiles), Menu backgrounds, and Win sprite.
+
+The game flow is: **Menu → Level Start → Collect keys/health → Avoid hazards → Reach goal → Win Screen → Restart**
