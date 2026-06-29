@@ -21,4 +21,4 @@ func _on_body_entered(body):
 func activate_checkpoint() -> void:
 	activated = true
 	print("Checkpoint activated at:", global_position)
-	Global.set_checkpoint(global_position)
+	Global.registerCheckpoint(global_position)

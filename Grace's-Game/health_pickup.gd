@@ -5,13 +5,13 @@ func _on_body_entered(body: Node) -> void:
 		return
 
 	# Assuming your health is stored globally
-	if Global.player_health >= Global.max_player_health:
+	if Global.hitPoints >= Global.maxHitPoints:
 		return  # ❌ do nothing if already full health
 
 	# ✅ heal player
-	Global.player_health += 1
-	Global.player_health = min(Global.player_health, Global.max_player_health)
+	Global.hitPoints += 1
+	Global.hitPoints = min(Global.hitPoints, Global.maxHitPoints)
 
-	Global.health_changed.emit()
+	Global.vitalityChanged.emit()
 
 	queue_free()

@@ -7,10 +7,10 @@ func _ready() -> void:
 
 func _on_play_again_pressed() -> void:
 	# 1. Reset global player state
-	Global.reset_player()
-	Global.current_level = 1
-	Global.clear_spawn()
-	Global.unlock_player_input()
+	Global.reinitializePlayerState()
+	Global.activeLevel = 1
+	Global.clearRespawnPoint()
+	Global.enablePlayerInput()
 
 	# 2. Reload current level scene
 	get_tree().reload_current_scene()

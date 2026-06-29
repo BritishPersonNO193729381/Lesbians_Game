@@ -4,25 +4,25 @@ extends Node
 # SIGNALS
 # ==========================================
 
-signal health_changed
+signal vitalityChanged
 
 # ==========================================
 # PLAYER DATA
 # ==========================================
 
-var max_player_health: int = 4
-var player_health: int = 3
+var maxHitPoints: int = 4
+var hitPoints: int = 3
 
-var player_score: int = 0
-var player_coins: int = 0
-var player_keys: int = 0
+var playerScore: int = 0
+var collectedTreasure: int = 0
+var collectedKeys: int = 0
 
 # ==========================================
 # LEVEL DATA
 # ==========================================
 
-var current_level: int = 1
-var spawn_position: Vector2 = Vector2.ZERO
+var activeLevel: int = 1
+var respawnCheckpoint: Vector2 = Vector2.ZERO
 
 # ==========================================
 # SETTINGS
@@ -36,68 +36,68 @@ var menu_world_position: Vector2 = Vector2.ZERO
 # INPUT CONTROL SYSTEM (NEW)
 # ==========================================
 
-var player_input_locked: bool = false
+var inputDisabled: bool = false
 
-func lock_player_input() -> void:
-	player_input_locked = true
+func disablePlayerInput() -> void:
+	inputDisabled = true
 
-func unlock_player_input() -> void:
-	player_input_locked = false
+func enablePlayerInput() -> void:
+	inputDisabled = false
 
-func is_input_locked() -> bool:
-	return player_input_locked
+func isPlayerInputDisabled() -> bool:
+	return inputDisabled
 
 
 # ==========================================
 # PLAYER ACTIONS
 # ==========================================
 
-func damage_player() -> void:
-	player_health = max(player_health - 1, 0)
-	health_changed.emit()
+func receiveDamage() -> void:
+	hitPoints = max(hitPoints - 1, 0)
+	vitalityChanged.emit()
 
-func heal_player() -> void:
-	player_health = min(player_health + 1, max_player_health)
-	health_changed.emit()
+func restoreHealth() -> void:
+	hitPoints = min(hitPoints + 1, maxHitPoints)
+	vitalityChanged.emit()
 
-func full_heal() -> void:
-	player_health = max_player_health
-	health_changed.emit()
+func restoreFullHealth() -> void:
+	hitPoints = maxHitPoints
+	vitalityChanged.emit()
 
 # ==========================================
 # SCORE / COLLECTABLES
 # ==========================================
 
-func add_key() -> void:
-	player_keys += 1
+func collectKey() -> void:
+	collectedKeys += 1
 
-func add_score(amount: int) -> void:
-	player_score += amount
+func addPlayerScore(amount: int) -> void:
+	playerScore += amount
 
-func add_coin() -> void:
-	player_coins += 1
+func collectTreasure() -> void:
+	collectedTreasure += 1
 
 # ==========================================
 # SPAWN SYSTEM
 # ==========================================
 
-func set_checkpoint(position: Vector2) -> void:
-	spawn_position = position
+func registerCheckpoint(position: Vector2) -> void:
+	respawnCheckpoint = position
 
-func set_spawn(position: Vector2) -> void:
-	spawn_position = position
+func setRespawnPoint(position: Vector2) -> void:
+	respawnCheckpoint = position
 
-func clear_spawn() -> void:
-	spawn_position = Vector2.ZERO
+func clearRespawnPoint() -> void:
+	respawnCheckpoint = Vector2.ZERO
 
 # ==========================================
 # GAME RESET
 # ==========================================
 
-func reset_player() -> void:
-	player_health = max_player_health
-	player_score = 0
-	player_coins = 0
-	player_keys = 0
+func reinitializePlayerState() -> void:
+	hitPoints = maxHitPoints
+	playerScore = 0
+	collectedTreasure = 0
+	collectedKeys = 0
 
-	health_changed.emit()
+	vitalityChanged.emit()

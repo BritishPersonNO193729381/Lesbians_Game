@@ -10,7 +10,7 @@ func _process(_delta):
 	if unlocked:
 		return
 
-	if Global.player_keys >= required_keys:
+	if Global.collectedKeys >= required_keys:
 		unlock_block()
 
 func unlock_block() -> void:

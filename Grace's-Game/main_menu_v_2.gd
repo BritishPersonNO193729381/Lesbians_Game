@@ -22,9 +22,7 @@ extends CanvasLayer
 
 func _ready() -> void:
 	# lock input while menu is open
-	Global.lock_player_input()
-
-	# connect buttons
+	Global.disablePlayerInput()
 	play_button.pressed.connect(_on_play)
 	controls_button.pressed.connect(_show_controls)
 	credits_button.pressed.connect(_show_credits)
@@ -39,8 +37,7 @@ func _ready() -> void:
 # =========================================
 
 func open_menu() -> void:
-	Global.lock_player_input()
-
+		Global.disablePlayerInput()
 	var player := get_tree().get_first_node_in_group("Player")
 	if player:
 		Global.menu_world_position = player.global_position + Vector2(0, -60)
@@ -78,4 +75,4 @@ func _on_play() -> void:
 	self.visible = false
 
 	# unlock player input
-	Global.unlock_player_input()
+	Global.enablePlayerInput()

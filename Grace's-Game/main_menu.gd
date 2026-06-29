@@ -42,7 +42,7 @@ func set_state(new_state: MenuState) -> void:
 # MAIN MENU BUTTONS
 # -------------------------------------------------
 func _on_play_pressed() -> void:
-	Global.unlock_player_input()
+	Global.enablePlayerInput()
 	visible = false
 
 

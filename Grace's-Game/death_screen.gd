@@ -59,7 +59,7 @@ func _on_retry_pressed() -> void:
 
 	get_tree().paused = false
 
-	Global.reset_player()
+	Global.reinitializePlayerState()
 	get_tree().reload_current_scene()
 
 # ==========================================

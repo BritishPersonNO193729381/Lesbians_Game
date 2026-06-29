@@ -37,7 +37,7 @@ var dead := false
 # =========================================
 
 func _ready():
-	Global.set_checkpoint(global_position)
+	Global.registerCheckpoint(global_position)
 
 # ==========================================
 # GAME LOOP
@@ -49,7 +49,7 @@ func _physics_process(delta: float) -> void:
 		return
 
 	# ❌ GLOBAL INPUT LOCK CHECK
-	if Global.is_input_locked():
+	if Global.isPlayerInputDisabled():
 		velocity = Vector2.ZERO
 		move_and_slide()
 		return
@@ -101,9 +101,9 @@ func take_damage(from_position: Vector2) -> void:
 	invincible = true
 	can_move = false
 
-	Global.damage_player()
+	Global.receiveDamage()
 
-	if Global.player_health <= 0:
+	if Global.hitPoints <= 0:
 		die()
 		return
 
@@ -122,7 +122,7 @@ func take_damage(from_position: Vector2) -> void:
 # ==========================================
 
 func respawn() -> void:
-	print("Respawning at:", Global.spawn_position)
+		print("Respawning at:", Global.respawnCheckpoint)
 	print("Player:", global_position)
 	print("Camera:", get_viewport().get_camera_2d().global_position)
 
@@ -131,9 +131,9 @@ func respawn() -> void:
 	can_move = true
 
 	velocity = Vector2.ZERO
-	global_position = Global.spawn_position
+	global_position = Global.respawnCheckpoint
 
-	Global.full_heal()
+	Global.restoreFullHealth()
 	set_physics_process(true)
 
 # ==========================================
