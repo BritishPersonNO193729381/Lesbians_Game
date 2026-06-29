@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dq43a7ke4x8b3"]
+
+[ext_resource type="Script" uid="uid://cd6r3p5x1dbsa" path="res://checkpoint.gd" id="1_r6hke"]
+[ext_resource type="Texture2D" uid="uid://fqyu1myxw6rb" path="res://Checkpoint Icecream.png" id="2_tnhlw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 58.30952
+
+[node name="Checkpoint" type="Area2D" unique_id=323645486]
+script = ExtResource("1_r6hke")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1723352891]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=987448411]
+texture = ExtResource("2_tnhlw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

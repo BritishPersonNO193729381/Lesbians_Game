@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://s0ltvpcpk47x"]
+
+[ext_resource type="Script" uid="uid://cd1wl8hbyln83" path="res://win.gd" id="1_hgi8f"]
+[ext_resource type="Texture2D" uid="uid://bh8qumnmxxvar" path="res://Sprites/Win Icecream.png" id="2_tmki8"]
+[ext_resource type="PackedScene" uid="uid://bysuxl4smo0qy" path="res://win_screen.tscn" id="3_tmki8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 48.259712
+
+[node name="Win" type="Area2D" unique_id=1327919768]
+script = ExtResource("1_hgi8f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=948286947]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1807505273]
+texture = ExtResource("2_tmki8")
+
+[node name="Win_Screen" parent="." unique_id=333149313 instance=ExtResource("3_tmki8")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

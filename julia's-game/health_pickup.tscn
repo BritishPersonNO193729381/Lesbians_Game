@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ld65gl2onx4i"]
+
+[ext_resource type="Script" uid="uid://dwnkmc82uundt" path="res://health_pickup.gd" id="1_awyve"]
+[ext_resource type="Texture2D" uid="uid://ycpb43w37r08" path="res://Sprites/Heath_Pickup.png" id="2_xl6eh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 42.201897
+
+[node name="Health_Pickup" type="Area2D" unique_id=1656355219]
+script = ExtResource("1_awyve")
+
+[node name="Ice_Cream_Sprite" type="Sprite2D" parent="." unique_id=1401557722]
+texture = ExtResource("2_xl6eh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1964938741]
+shape = SubResource("CircleShape2D_g4v7s")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

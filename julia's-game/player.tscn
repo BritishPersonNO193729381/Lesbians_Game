@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ck5spugybuie3"]
+
+[ext_resource type="Texture2D" uid="uid://dp76of81to1pa" path="res://Sprites/Player_Sprite.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://xb5m3mwfrbab" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(94, 97)
+
+[node name="Player" type="CharacterBody2D" unique_id=601120954 groups=["Damagable", "Player"]]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=332868498]
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1731690797]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=968751814]

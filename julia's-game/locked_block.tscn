@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dl17dmon4rkf7"]
+
+[ext_resource type="Script" uid="uid://be20bqiv0f2xf" path="res://locked_block.gd" id="1_tv2qi"]
+[ext_resource type="Texture2D" uid="uid://h6vls23w378t" path="res://Sprites/Bottom Dirt Locked.png" id="2_fcod8"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g4v7s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(100, 98)
+
+[node name="Locked_Block" type="StaticBody2D" unique_id=1911553515]
+physics_material_override = SubResource("PhysicsMaterial_g4v7s")
+script = ExtResource("1_tv2qi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=176307835]
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1083497226]
+texture = ExtResource("2_fcod8")

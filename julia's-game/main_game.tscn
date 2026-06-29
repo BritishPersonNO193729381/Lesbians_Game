@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://tmu1uula1t6j"]
+
+[ext_resource type="Script" uid="uid://bttv614j2nrgp" path="res://main_game.gd" id="1_ykeeq"]
+[ext_resource type="PackedScene" uid="uid://b1kd0juyfdksg" path="res://main_menu_v_2.tscn" id="2_2pltu"]
+[ext_resource type="PackedScene" uid="uid://ck5spugybuie3" path="res://player.tscn" id="2_6bm6p"]
+[ext_resource type="PackedScene" uid="uid://bkb0paggwm1oy" path="res://level_1.tscn" id="3_dugkq"]
+[ext_resource type="PackedScene" uid="uid://ce7k05e5le36t" path="res://hud.tscn" id="5_dugkq"]
+[ext_resource type="PackedScene" uid="uid://bdafbjpwu7yiu" path="res://death_screen.tscn" id="6_2pltu"]
+
+[node name="Main_Game" type="Node2D" unique_id=556118619]
+script = ExtResource("1_ykeeq")
+
+[node name="Main_Menu_V2" parent="." unique_id=1669979356 instance=ExtResource("2_2pltu")]
+
+[node name="HUD" parent="." unique_id=345692311 instance=ExtResource("5_dugkq")]
+layer = 0
+
+[node name="Death_Screen" parent="." unique_id=1154232461 instance=ExtResource("6_2pltu")]
+
+[node name="Player" parent="." unique_id=601120954 instance=ExtResource("2_6bm6p")]
+position = Vector2(119, -100)
+
+[node name="Level1" parent="." unique_id=358594589 instance=ExtResource("3_dugkq")]

@@ -1,0 +1,211 @@
+[gd_scene format=3 uid="uid://b1kd0juyfdksg"]
+
+[ext_resource type="Script" uid="uid://do4ufwh26vo56" path="res://main_menu_v_2.gd" id="1_ca6u0"]
+[ext_resource type="Texture2D" uid="uid://22thocwfuh62" path="res://Sprites/Menu_Background_V2.jpg" id="2_cggx6"]
+[ext_resource type="FontFile" uid="uid://b60wcm3305a17" path="res://Fonts/HappyFestive-MAYVn.ttf" id="3_afq7g"]
+[ext_resource type="FontFile" uid="uid://b25tq8b041oto" path="res://Fonts/LoveDays-2v7Oe.ttf" id="4_6hkmd"]
+[ext_resource type="LabelSettings" uid="uid://djjg8ljb81lc5" path="res://Controls_Label_Settings.tres" id="5_3vrcy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g5yxx"]
+font = ExtResource("3_afq7g")
+font_size = 87
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_c460e"]
+font = ExtResource("3_afq7g")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_unbeb"]
+font_size = 90
+
+[sub_resource type="LabelSettings" id="LabelSettings_svmxa"]
+font = ExtResource("3_afq7g")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_usqxs"]
+font_size = 60
+
+[node name="Main_Menu_V2" type="CanvasLayer" unique_id=1669979356]
+script = ExtResource("1_ca6u0")
+
+[node name="Main_Menu_Page" type="Control" parent="." unique_id=407934648]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Main_Menu_Page" unique_id=1399558738]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cggx6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main_Menu_Page" unique_id=610870387]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Main_Menu_Page/VBoxContainer" unique_id=734508033]
+layout_mode = 2
+theme_override_font_sizes/font_size = 67
+text = "!Glorbs Adventure!"
+label_settings = SubResource("LabelSettings_g5yxx")
+horizontal_alignment = 1
+
+[node name="Spacer" type="Label" parent="Main_Menu_Page/VBoxContainer" unique_id=619235958]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+label_settings = SubResource("LabelSettings_g4v7s")
+
+[node name="Play" type="Button" parent="Main_Menu_Page/VBoxContainer" unique_id=424298748]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_6hkmd")
+theme_override_font_sizes/font_size = 30
+text = "Play Game"
+
+[node name="Control_Help" type="Button" parent="Main_Menu_Page/VBoxContainer" unique_id=297610110]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_6hkmd")
+theme_override_font_sizes/font_size = 30
+text = "Controls"
+
+[node name="Credz" type="Button" parent="Main_Menu_Page/VBoxContainer" unique_id=2063680551]
+custom_minimum_size = Vector2(700, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_6hkmd")
+theme_override_font_sizes/font_size = 30
+text = "Credits"
+
+[node name="Controls_Page" type="Control" parent="." unique_id=23763958]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background_XColour" type="ColorRect" parent="Controls_Page" unique_id=975731760]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.73333335, 0.8509804, 0.6666667, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls_Page" unique_id=380886582]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Controls_Page/VBoxContainer" unique_id=1222328013]
+layout_mode = 2
+text = "<Controls<"
+label_settings = SubResource("LabelSettings_c460e")
+horizontal_alignment = 1
+
+[node name="Spacer" type="Label" parent="Controls_Page/VBoxContainer" unique_id=1083823325]
+layout_mode = 2
+text = "‎ "
+label_settings = SubResource("LabelSettings_unbeb")
+
+[node name="Movement_1" type="Label" parent="Controls_Page/VBoxContainer" unique_id=1329798858]
+layout_mode = 2
+text = "A / Arrow Key [ < ] = Go Left"
+label_settings = ExtResource("5_3vrcy")
+horizontal_alignment = 1
+
+[node name="Movement_2" type="Label" parent="Controls_Page/VBoxContainer" unique_id=943719233]
+layout_mode = 2
+text = "D / Arrow Key [ > ] = Go Right"
+label_settings = ExtResource("5_3vrcy")
+horizontal_alignment = 1
+
+[node name="Movement_3" type="Label" parent="Controls_Page/VBoxContainer" unique_id=253963234]
+layout_mode = 2
+text = "Space / W / Arrow Key [ ^ ] = Jump"
+label_settings = ExtResource("5_3vrcy")
+horizontal_alignment = 1
+
+[node name="Spacer2" type="Label" parent="Controls_Page/VBoxContainer" unique_id=1776220028]
+layout_mode = 2
+text = "‎ "
+label_settings = SubResource("LabelSettings_unbeb")
+
+[node name="Back" type="Button" parent="Controls_Page/VBoxContainer" unique_id=717569415]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_6hkmd")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[node name="Credits_Page" type="Control" parent="." unique_id=811032631]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background_Colour" type="ColorRect" parent="Credits_Page" unique_id=181588341]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.73333335, 0.8509804, 0.6666667, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits_Page" unique_id=372310730]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Credits_Page/VBoxContainer" unique_id=780706645]
+layout_mode = 2
+text = "<Credits<"
+label_settings = SubResource("LabelSettings_svmxa")
+horizontal_alignment = 1
+
+[node name="Spacer2" type="Label" parent="Credits_Page/VBoxContainer" unique_id=345250208]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "‎ "
+label_settings = SubResource("LabelSettings_usqxs")
+
+[node name="Credits" type="Label" parent="Credits_Page/VBoxContainer" unique_id=1099668730]
+layout_mode = 2
+text = "<> Developer ~ Grace
+
+<> Graphical Designer ~ Grace
+
+<> Scripting ~ Grace
+
+<> Debugging ~ ChatGPT"
+label_settings = ExtResource("5_3vrcy")
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="Credits_Page/VBoxContainer" unique_id=591655112]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_6hkmd")
+theme_override_font_sizes/font_size = 30
+text = "Back"

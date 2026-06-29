@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://djjg8ljb81lc5"]
+
+[ext_resource type="FontFile" uid="uid://b25tq8b041oto" path="res://Fonts/LoveDays-2v7Oe.ttf" id="1_k0gq7"]
+
+[resource]
+font = ExtResource("1_k0gq7")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+outline_size = 9
+outline_color = Color(0.5101599, 0.93810666, 0.48312604, 1)

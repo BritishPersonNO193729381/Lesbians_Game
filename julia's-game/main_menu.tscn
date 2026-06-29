@@ -1,0 +1,221 @@
+[gd_scene format=3 uid="uid://b18q31t3wgpch"]
+
+[ext_resource type="Script" uid="uid://b6ypuuqo81kef" path="res://main_menu.gd" id="1_glbon"]
+[ext_resource type="Texture2D" uid="uid://22thocwfuh62" path="res://Sprites/Menu_Background_V2.jpg" id="2_glbon"]
+[ext_resource type="FontFile" uid="uid://b60wcm3305a17" path="res://Fonts/HappyFestive-MAYVn.ttf" id="3_qe12f"]
+[ext_resource type="FontFile" uid="uid://b25tq8b041oto" path="res://Fonts/LoveDays-2v7Oe.ttf" id="4_8qtwp"]
+[ext_resource type="LabelSettings" uid="uid://djjg8ljb81lc5" path="res://Controls_Label_Settings.tres" id="5_dy7ct"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yf5fn"]
+font = ExtResource("3_qe12f")
+font_size = 87
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(13.78846, 15.971748, 13.311856, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_57qmd"]
+font = ExtResource("3_qe12f")
+font_size = 100
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3gngh"]
+font_size = 74
+
+[node name="Main_Menu" type="Control" unique_id=747455751]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_glbon")
+
+[node name="Title_Screen_Background" type="TextureRect" parent="." unique_id=515802107]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_glbon")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1089408088]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=651941518]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=921053591]
+layout_mode = 2
+theme_override_font_sizes/font_size = 67
+text = "Glorb's Adventure"
+label_settings = SubResource("LabelSettings_yf5fn")
+horizontal_alignment = 1
+
+[node name="Spacer" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1289872173]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer" unique_id=835326527]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_8qtwp")
+theme_override_font_sizes/font_size = 30
+text = "Play Game"
+
+[node name="Control_Help" type="Button" parent="MarginContainer/VBoxContainer" unique_id=530917088]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_8qtwp")
+theme_override_font_sizes/font_size = 30
+text = "Controls"
+
+[node name="Credz" type="Button" parent="MarginContainer/VBoxContainer" unique_id=799953057]
+custom_minimum_size = Vector2(700, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_8qtwp")
+theme_override_font_sizes/font_size = 30
+text = "Credits"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=521170395]
+
+[node name="Controls_Screen" type="Panel" parent="." unique_id=2015837560]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_glbon")
+
+[node name="ColorRect" type="ColorRect" parent="Controls_Screen" unique_id=595000205]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.73333335, 0.8509804, 0.6666667, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controls_Screen" unique_id=1239164294]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Controls_Screen/VBoxContainer" unique_id=793770493]
+layout_mode = 2
+text = "<Controls<"
+label_settings = SubResource("LabelSettings_57qmd")
+horizontal_alignment = 1
+
+[node name="Spacer" type="Label" parent="Controls_Screen/VBoxContainer" unique_id=834758473]
+layout_mode = 2
+text = "‎ "
+label_settings = SubResource("LabelSettings_3gngh")
+
+[node name="Movement_1" type="Label" parent="Controls_Screen/VBoxContainer" unique_id=610931141]
+layout_mode = 2
+text = "A / Arrow Key [ < ] = Go Left"
+label_settings = ExtResource("5_dy7ct")
+horizontal_alignment = 1
+
+[node name="Movement_2" type="Label" parent="Controls_Screen/VBoxContainer" unique_id=28821377]
+layout_mode = 2
+text = "D / Arrow Key [ > ] = Go Right"
+label_settings = ExtResource("5_dy7ct")
+horizontal_alignment = 1
+
+[node name="Movement_3" type="Label" parent="Controls_Screen/VBoxContainer" unique_id=1509032427]
+layout_mode = 2
+text = "Space / W / Arrow Key [ ^ ] = Jump"
+label_settings = ExtResource("5_dy7ct")
+horizontal_alignment = 1
+
+[node name="Spacer2" type="Label" parent="Controls_Screen/VBoxContainer" unique_id=40511780]
+layout_mode = 2
+text = "‎ "
+label_settings = SubResource("LabelSettings_3gngh")
+
+[node name="Back" type="Button" parent="Controls_Screen/VBoxContainer" unique_id=599798156]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_8qtwp")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[node name="Credits_Screen" type="Panel" parent="." unique_id=1055853604]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Credits_Screen" unique_id=47807537]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.73333335, 0.8509804, 0.6666667, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits_Screen" unique_id=1166050874]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Credits_Screen/VBoxContainer" unique_id=875433459]
+layout_mode = 2
+text = "<Credits<"
+label_settings = SubResource("LabelSettings_57qmd")
+horizontal_alignment = 1
+
+[node name="Spacer2" type="Label" parent="Credits_Screen/VBoxContainer" unique_id=1035608571]
+layout_mode = 2
+text = "‎ "
+label_settings = SubResource("LabelSettings_3gngh")
+
+[node name="Credits" type="Label" parent="Credits_Screen/VBoxContainer" unique_id=283780153]
+layout_mode = 2
+text = "<> Developer ~ Grace
+
+<> Graphical Designer ~ Grace
+
+<> Scripting ~ Grace
+
+<> Debugging ~ ChatGPT"
+label_settings = ExtResource("5_dy7ct")
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="Credits_Screen/VBoxContainer" unique_id=1605516728]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_8qtwp")
+theme_override_font_sizes/font_size = 30
+text = "Back"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Control_Help" to="." method="_on_control_help_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Credz" to="." method="_on_credz_pressed"]
+[connection signal="pressed" from="Controls_Screen/VBoxContainer/Back" to="." method="_on_controls_back_pressed"]
+[connection signal="pressed" from="Credits_Screen/VBoxContainer/Back" to="." method="_on_credits_back_pressed"]

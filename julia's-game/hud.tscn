@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://ce7k05e5le36t"]
+
+[ext_resource type="Script" uid="uid://cyewdaln72h8n" path="res://ice_cream_health_hud.gd" id="1_1xsix"]
+[ext_resource type="Texture2D" uid="uid://b5sjadwjni5mn" path="res://Sprites/Max Health.png" id="2_rftc2"]
+[ext_resource type="Texture2D" uid="uid://fpijuykksy6q" path="res://Sprites/3 Health.png" id="3_61f8s"]
+[ext_resource type="Texture2D" uid="uid://dj8hjwbs10br3" path="res://Sprites/2 Health.png" id="4_g10ll"]
+[ext_resource type="Texture2D" uid="uid://71bollpxe2we" path="res://Sprites/1 Health.png" id="5_gpiub"]
+[ext_resource type="Texture2D" uid="uid://dspsqrodgno6" path="res://Sprites/Dead.png" id="6_amv7k"]
+
+[node name="HUD" type="CanvasLayer" unique_id=345692311]
+
+[node name="IceCreamHealthHUD" type="Node2D" parent="." unique_id=1350087938]
+position = Vector2(25, 55)
+script = ExtResource("1_1xsix")
+
+[node name="4HP" type="Sprite2D" parent="IceCreamHealthHUD" unique_id=1631607772]
+texture = ExtResource("2_rftc2")
+
+[node name="3HP" type="Sprite2D" parent="IceCreamHealthHUD" unique_id=83562697]
+texture = ExtResource("3_61f8s")
+
+[node name="2HP" type="Sprite2D" parent="IceCreamHealthHUD" unique_id=1607507676]
+texture = ExtResource("4_g10ll")
+
+[node name="1HP" type="Sprite2D" parent="IceCreamHealthHUD" unique_id=1911339552]
+texture = ExtResource("5_gpiub")
+
+[node name="0HP" type="Sprite2D" parent="IceCreamHealthHUD" unique_id=252006165]
+texture = ExtResource("6_amv7k")
